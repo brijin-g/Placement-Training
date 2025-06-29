@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int count=sc.nextInt();
+        int rent=sc.nextInt();
+        int Days=sc.nextInt();
+        if(count==4 || count==5||count==6||count==11||count==12){
+            int hike=(rent+(rent*20)/100)*Days;
+            System.out.println(hike);
+        }
+        else if(count==1||count==2||count==3||count==7||count==8||count==9||count==10){
+            int hike=rent*Days;
+            System.out.println(hike);
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+        
+    }
+}
